@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:test ="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@mipmap/background"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="top|center"
+        android:layout_gravity="top"
+        android:text="@string/hello"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10sp"
+        android:background="@drawable/border_line_while"
+        android:baselineAligned="false"
+        android:onClick="CallMe"
+        android:text='@string/start' />
+
+    <widget.HeartProgressBar
+        android:id="@+id/hpb"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10sp"
+        test:InnerTextColor="@color/yellow"
+        test:InnerTextSize="10dp"
+        test:Progress="0"
+        test:ReachedColor="@color/red"
+        test:UnReachedColor="@color/white" />
+
+    <widget.BubbleProgressView
+        android:id="@+id/bpb"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="center"/>
+
+
+</LinearLayout>
